@@ -217,13 +217,18 @@
 
 
 .descr__right {
-  min-width: 320px;
-  height: 170px;
+  min-width: 111%;
+  height: 53.3vw;
   margin-left: -5.5%;
+  background: url(../images/_MG_3223.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width:768px) {
   .descr__right{
+    min-width: 50%;
     max-width: 50%;
+    height: auto;
   }
 }
