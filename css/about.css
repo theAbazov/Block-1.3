@@ -212,7 +212,7 @@
 .more__img {
   width: 24px;
   height: 24px;
-  background: url(../images/expand.svg);
+  background: url(../images/about/expand.svg);
 }
 
 
@@ -220,7 +220,7 @@
   min-width: 111%;
   height: 53.3vw;
   margin-left: -5.5%;
-  background: url(../images/_MG_3223.png);
+  background: url(../images/about/logotb.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
