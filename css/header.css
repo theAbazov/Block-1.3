@@ -1,0 +1,99 @@
+.header{
+    background: #fff;
+}
+.header__row{
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.header__left, .header__right{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.header__line{
+    width: 2px;
+    height: 32px;
+    background: #EAEAEA;
+}
+
+.header__logo{
+    background-image: url(../images/header/Group.svg);
+    background-size: cover;
+    width: 96px;
+    height: 50px;
+}
+
+.header__item{
+    width: 40px;
+    height: 40px;
+}
+
+.header__burger{
+    background-image: url(../images/header/burger.svg);
+}
+
+.header__line-left{
+    display: none;
+}
+
+@media  screen and (min-width: 768px) and (max-width:1120px) {
+    .header__line-left{
+        display: block;
+    }
+}
+
+.header__call{
+    display: none;
+    background-image: url(../images/header/call.svg);
+
+}
+@media  screen and (min-width: 768px) and (max-width:1120px) {
+    .header__call{
+        display: block;
+    }
+}
+
+.header__msg{
+    display: none;
+    background-image: url(../images/header/chat.svg);
+
+}
+
+@media  screen and (min-width: 768px) and (max-width:1120px) {
+    .header__msg{
+        display: block;
+    }
+}
+
+.header__profile{
+    display: none;
+    background-image: url(../images/header/profile.svg);
+
+}
+
+@media  screen and (min-width: 768px) and (max-width:1120px) {
+    .header__profile{
+        display: block;
+    }
+}
+
+
+.header__line-right{
+    margin-right: 4px;
+}
+
+.header__option{
+    background: url(../images/header/repair.svg);
+}
+
+.header__search{
+    background: url(../images/header/checkstatus.svg);
+    
+}
+
+
+@media screen and (min-width: 1120px) {
+    header{display: none;}
+}
