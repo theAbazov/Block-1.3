@@ -2,11 +2,14 @@
 @import url(./header.css);
 @import url(./about.css);
 
+html{
+    box-sizing: border-box;
+}
 
 *, *::after, *::before{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body{
@@ -45,6 +48,18 @@ li{
 a{
     text-decoration: none;
     color: #000;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button:focus-visible{
+    outline: 2px solid rgb(212, 208, 208);
+    border-radius: 3px;
 }
 
 

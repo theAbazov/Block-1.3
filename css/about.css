@@ -75,14 +75,16 @@
     align-items: center;
     color: #1b1c21;
     font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
   }
-  
+
   .about__option-img {
     width: 40px;
     height: 40px;
     background: url(../images/header/repair.svg);
   }
-  
+
   .about__search-img {
     width: 40px;
     height: 40px;
@@ -120,12 +122,25 @@
   -webkit-appearance: none;
 }
 
+.menu__item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.menu__item-content:focus-visible {
+  border: 2px solid #b8ffec;
+  outline: none;
+  border-radius: 6px;
+}
+
 .menu__item-content {
-  padding: 8px 22px;
   white-space: nowrap;
   color: #7e7e82;
   font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
   border: 2px solid transparent;
+  padding: 8px 22px;
 }
 
 .menu__item-content:hover {
@@ -147,74 +162,70 @@
   margin: 24px 0 35px 0;
 }
 
-@media screen and (min-width:768) {
-  .about__content{
+@media screen and (min-width: 768px) {
+  .about__content {
     margin: 24px 0 35px 0;
   }
 }
-
 
 .descr__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media screen and (min-width:768px){
-  .descr__wrapper{
+@media screen and (min-width: 768px) {
+  .descr__wrapper {
     flex-wrap: nowrap;
   }
 }
 
-
-
-@media screen and (min-width:768px){
-  .descr__left{
+@media screen and (min-width: 768px) {
+  .descr__left {
     width: 43.3%;
   }
 }
-@media screen and (min-width: 1120px){
-  .descr__left{
+@media screen and (min-width: 1120px) {
+  .descr__left {
     width: 47%;
   }
 }
 
-
 .descr__text {
   font-size: 14px;
-  letter-spacing: .2px;
   line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1b1c21;
   height: 90px;
   overflow: hidden;
 }
-@media screen and (min-width:768px){
-  .descr__text{
-    height: 150px;
+@media screen and (min-width: 768px) {
+  .descr__text {
+    height: 160px;
+    line-height: 20px;
   }
-
 }
 
-
-.descr__more{
-  margin: 16px 0 ;
+.descr__more {
+  margin: 16px 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 }
-@media screen and (min-width:768px){
-  .descr__more{
+@media screen and (min-width: 768px) {
+  .descr__more {
     margin-top: 10px;
   }
 }
 
-
 .more {
   display: flex;
 }
-
 
 .more__img {
   width: 24px;
   height: 24px;
   background: url(../images/about/expand.svg);
 }
-
 
 .descr__right {
   min-width: 111%;
@@ -225,8 +236,8 @@
   background-size: cover;
 }
 
-@media screen and (min-width:768px) {
-  .descr__right{
+@media screen and (min-width: 768px) {
+  .descr__right {
     min-width: 50%;
     max-width: 50%;
     height: 27.2vw;

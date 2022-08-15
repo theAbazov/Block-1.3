@@ -12,17 +12,21 @@
       <div class="container">
         <div class="row header__row">
           <div class="header__left">
-            <div class="header__burger header__item"></div>
+            <button aria-label="Меню бургер" title="Открывает меню" class="header__burger header__item"></button>
             <div class="header__line-left header__line"></div>
             <div class="header__logo"></div>
           </div>
           <div class="header__right">
-            <div class="header__call header__item"></div>
-            <div class="header__msg header__item"></div>
-            <div class="header__profile header__item"></div>
+            <button aria-label="Телефон" title="Звонит нам" class="header__call header__item"></button>
+            <button aria-label="Сообщение" title="Отправляет сообщение нам" class="header__msg header__item"></button>
+            <button 
+              aria-label="Профиль"
+              title="Открывает профиль"
+              class="header__profile header__item"
+            ></button>
             <div class="header__line-right header__line"></div>
-            <div class="header__option header__item"></div>
-            <div class="header__search header__item"></div>
+            <button aria-label="Ремонт" title="Отслежка заказа" class="header__option header__item"></button>
+            <button aria-label="Поиск" title="Для поиска по сайту" class="header__search header__item"></button>
           </div>
         </div>
       </div>
@@ -36,14 +40,14 @@
               <h1 class="about__title-text">Услуги и сервисы</h1>
             </div>
             <div class="about__hidden">
-              <div class="about__icons">
+              <button aria-label="Ремонт" title="Оставить заявку" class="about__icons">
                 <p class="about__option-text">Оставить заявку</p>
                 <div class="about__option-img"></div>
-              </div>
-              <div class="about__icons">
+              </button>
+              <button aria-label="Лупа" title="Статус ремонта" class="about__icons">
                 <p class="about__search-text">Статус ремонта</p>
                 <div class="about__search-img"></div>
-              </div>
+              </button>
             </div>
           </div>
         </section>
@@ -51,53 +55,28 @@
           <div class="container">
             <ul class="menu__wrapper">
               <li class="menu__item">
-                <label>
-                  <input
-                    checked
-                    class="menu__item-input"
-                    type="radio"
-                    name="menu"
-                  />
-                  <div class="menu__item-content" href="#">
-                    Ремонтируемые бренды
-                  </div>
-                </label>
+                <a aria-label="Ремонтируемые бренды" class="menu__item-content" href="#asd">
+                  Ремонтируемые бренды
+                </a>
               </li>
               <li class="menu__item">
-                <label>
-                  <input class="menu__item-input" type="radio" name="menu" />
-                  <div class="menu__item-content" href="#">
-                    Ремонтируемые устройства
-                  </div>
-                </label>
+                <a aria-label="Ремонтируемые устройства" class="menu__item-content" href="#">
+                  Ремонтируемые устройства
+                </a>
               </li>
               <li class="menu__item">
-                <label>
-                  <input class="menu__item-input" type="radio" name="menu" />
-                  <div class="menu__item-content" href="#">Цены на услуги</div>
-                </label>
+                <a aria-label="Цены на услуги" class="menu__item-content" href="#">Цены на услуги</a>
               </li>
               <li class="menu__item">
-                <label>
-                  <input class="menu__item-input" type="radio" name="menu" />
-                  <div class="menu__item-content" href="#">
-                    Адреса сервисных центров
-                  </div>
-                </label>
+                <a aria-label="Адреса сервисных центров" class="menu__item-content" href="#">
+                  Адреса сервисных центров
+                </a>
               </li>
               <li class="menu__item">
-                <label>
-                  <input class="menu__item-input" type="radio" name="menu" />
-                  <div class="menu__item-content" href="#">
-                    Специальные цены
-                  </div>
-                </label>
+                <a aria-label="Специальные цены" class="menu__item-content" href="#"> Специальные цены </a>
               </li>
               <li class="menu__item">
-                <label>
-                  <input class="menu__item-input" type="radio" name="menu" />
-                  <div class="menu__item-content" href="#">Отзывы</div>
-                </label>
+                <a aria-label="Отзывы" class="menu__item-content" href="#">Отзывы</a>
               </li>
             </ul>
           </div>
@@ -106,17 +85,25 @@
           <div class="container">
             <div class="descr__wrapper">
               <div class="descr__left">
-                <p class="descr__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. <br> <br>  
+                <p class="descr__text">
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с оaициальной гарантией производителя. <br />
+                  <br />
 
-                  Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера, что подтверждает большое количество
+                  постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                  рекомендациям и, в свою очередь, советуют нас родным и
+                  близким.
+                </p>
                 <!-- <p class="descr__text-2"></p> -->
-                <div class="descr__more more">
+                <button class="descr__more more">
                   <div class="more__img"></div>
                   <div class="more__text">Читать далее</div>
-                </div>
+                </button>
               </div>
-              <div class="descr__right">
-              </div>
+              <div class="descr__right"></div>
             </div>
           </div>
         </section>
